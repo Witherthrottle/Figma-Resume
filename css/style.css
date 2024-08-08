@@ -1,0 +1,357 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.page1{
+    display: block;
+}
+
+.page2{
+    display: none;
+}
+
+.page3{
+    display: none;
+}
+body{
+    font-family: 'heebo', sans-serif;
+    color:  #21243D;
+
+}
+.container{
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.container-sm{
+    max-width: 682px;
+    margin: 0 auto;
+}
+
+
+
+.navbar .navbar-flex{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 27px;
+}
+
+.navbar .navbar-flex a, .navbar .navbar-flex-2 a{
+    margin-right:33px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+
+
+
+.primary-flex{
+    display:flex;
+    margin-top:158px;
+
+}
+.primary-flex .primary-text{
+    padding-right: 110px;
+}
+
+.primary-flex .primary-text h1{
+    font-weight: 700px;
+    font-size: 44px;
+    margin-bottom: 40px;
+}
+
+.primary-flex .primary-text .primary-text-text{
+    font-weight: 400px;
+    font-size: 1rem;
+    
+}
+.btn {
+    display: inline-block;
+    padding: 13px 20px;
+    background: var(--light-color);
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: 0.5s;
+    text-align: center;
+    margin-bottom: 71px;
+}
+.btn.btn-resume{
+    background-color:#FF6464;
+    color:#FFFF;
+    margin-top: 38px;
+}
+
+.btn.btn-resume:hover{
+    opacity:85%;
+}
+
+
+/* Blue background thing*/
+.blue-background{
+    background: #EDF7FA;
+}
+
+.post-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.card-flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card{
+    background-color: white;
+    margin: 32px 0;
+    padding: 24px 22px;
+}
+
+.card h2{
+    margin-bottom: 17px;
+}
+.card .date-category{
+    margin-bottom:11px;
+}
+
+.card .date-category .date{
+    padding-right: 2rem;
+    border-right: 1px solid black;
+}
+
+.card .date-category .category{
+    margin-left: 2rem;
+}
+
+.post-flex a{
+    text-decoration: none;
+    color:#00A8CC;
+}
+
+
+/* Featured works*/ 
+.featured-works h3{
+    margin-bottom: 22px;
+    margin-top: 15px;
+    line-height: 60px;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.featured-works .featured-works-flex.classic{
+    display: flex;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.featured-works .featured-works-flex:not(.classic){
+    display: flex;
+    padding-bottom: 35px;
+    margin-top: 31px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.featured-works img{
+    padding-right: 18px;
+}
+.featured-works h2{
+    line-height: 44.06px;
+    font-weight: 700;
+    size:30px;
+    margin-bottom: 10px;
+}
+
+
+.featured-works .date{
+    background-color: #142850;
+    color: white;
+    border-radius: 16px;
+    font-size: 18px;
+    padding: 0 10px;
+    margin-right: 26px;
+}
+
+.featured-works .category{
+    font-size: 20px;
+   color: #8695A4
+}
+
+.featured-works .date-category-f{
+    margin-bottom: 37px;
+}
+
+/*footer*/
+
+footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 134px;
+    margin-bottom: 54px;
+
+}
+
+footer .footer-icons{
+    display: flex;
+    gap: 35px;
+}
+
+footer .footer-icons i{
+    font-size: 30px;
+}
+
+footer .copyright{
+    font-size: 14px;
+    margin-top: 26px;
+    
+
+}
+
+/* Page 2 */
+.page2 .heading{
+    margin-top:106px;
+    margin-bottom:23px;
+}
+.blogcard{
+    margin-top:32px;
+    border-bottom:1px solid #E0E0E0;
+    
+}
+.page2 .blogcard .date{
+    padding-right:32px;
+    border-right: 1px solid black;
+}
+.page2 .blogcard .category{
+    padding-left:32px;
+    color: #8695A4;
+
+}
+
+.page2 .blogcard p{
+    max-width: 682px;
+    padding-bottom: 29px;
+}
+.page2 .blogcard .date-category{
+    margin-top:16px;
+    margin-bottom:15px;
+}
+
+.navbar i{
+    display:none;
+}
+.navbar .navbar-flex-2{
+    display:none;
+}
+
+/*Media Queries */
+@media only screen and (max-width: 800px){
+    .primary-flex .primary-text{
+        padding-right: 60px;
+    }
+    .primary-flex .primary-text h1{
+        font-weight: 700px;
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .primary-flex{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .primary-flex .primary-text{
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .container:has(.btn-resume){
+        display:flex;
+        justify-content: center;
+    }
+    .post-flex{
+        justify-content: center;
+    }
+    .card-flex{
+        flex-direction: column;
+        justify-content: center;
+        gap: 0;
+    }
+    .card-flex .card{
+        max-width: 380px;
+        margin: 8.5px auto;
+    }
+    .post-flex a{
+        display: none;
+    }
+    .featured-works{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .featured-works .featured-works-flex{
+        flex-direction: column;
+        max-width: 344px;
+    }
+
+    .container-sm:has(.blogcard){
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .navbar{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .navbar i{
+        display: block;
+        z-index: 1000;
+        margin-right:20px;
+        margin-top:15px;
+    }
+    
+    @keyframes slideback{
+        from{
+            right: 0px;
+        }
+        to{
+            right: -300px;
+        }
+    }
+    @keyframes slide{
+        from{
+            right: -300px;
+        }
+        to{
+            right: 0px;
+        }
+    }
+    .navbar .navbar-flex-2{
+        animation-name: none;
+        animation-duration: 0.5s;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 100;
+        right: -300px;
+        background-color: #fff;
+        padding: 1rem;
+        height:100%;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        padding-top:30px;
+        
+       
+    }
+    .navbar .navbar-flex{
+        display: none;
+    }
+}
